@@ -1,6 +1,8 @@
 
 package recetas.colaborativas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author daniel
@@ -20,7 +22,7 @@ public class RecetasColaborativas {
         System.out.println("Ingrese las instrucciones:");
         String instrucciones = scanner.nextLine();
         
-        Receta nuevaReceta = new Receta(nombre, ingredientes, instrucciones);
+        receta nuevaReceta = new receta(nombre, ingredientes, instrucciones);
         gestor.agregarReceta(nuevaReceta);
         
         System.out.println("Receta agregada: " + nuevaReceta.getNombre());
