@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package recetas.colaborativas;
 
 /**
@@ -10,5 +6,18 @@ package recetas.colaborativas;
  * @author danie
  */
 public class receta {
+        private String nombre;
+    private String[] ingredientes;
+    private String instrucciones;
+    
+    public receta(String nombre, String[] ingredientes, String instrucciones) {
+        this.nombre = nombre;
+        this.ingredientes = ingredientes;
+        this.instrucciones = instrucciones;
+    }
+    
+    public String getNombre() { return nombre; }
+    public String[] getIngredientes() { return ingredientes; }
+    public String getInstrucciones() { return instrucciones; }
     
 }
